@@ -12,8 +12,9 @@ Animated dashboard
 step1:-Download the zip file or clone it from github 
 step2:- open the code in any editor 
 step3:-open the terminal of editor 
-step4:- in terminal run these command cd crud-app
-step5:- enter the command npm start 
+step4:- in terminal run these command cd tech-jar-master
+step5:- npm install
+step6:- enter the command npm start 
 now by entering npm start it will redirect to the localhost:3000 where project is been created and able to see the desired 
 output of the code.
 
