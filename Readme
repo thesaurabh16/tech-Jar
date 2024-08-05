@@ -1,0 +1,24 @@
+Animated dashboard 
+        1- I have created the login form where i have used mocked API authentication where Accept email and password inputs and validate them against predefined credentials and returns Accept email and password inputs and validate them against predefined credentials.
+        2- Login Credentials:-
+                      Username/Email:-user@example.com
+                      Password:-Password123!
+        3- Use above login credential to login the login form and it will redirect to the dashboard 
+        4- At dashboard i have created the animated sidebar to the both side left and right  and also created the top bar which 
+           contains user details and so on.
+
+
+***********How to run this project********************** 
+step1:-Download the zip file or clone it from github 
+step2:- open the code in any editor 
+step3:-open the terminal of editor 
+step4:- in terminal run these command cd crud-app
+step5:- enter the command npm start 
+now by entering npm start it will redirect to the localhost:3000 where project is been created and able to see the desired 
+output of the code.
+
+
+************Login Credentials************
+
+             Username/Email:-user@example.com
+             Password:-Password123!

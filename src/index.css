@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	input[type='number']::-webkit-outer-spin-button,
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number'] {
+		-webkit-appearance: none;
+		margin: 0;
+		-moz-appearance: textfield !important;
+	}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* @import url("https://fonts.cdnfonts.com/css/helvetica-2"); */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Inter', sans-serif; */
+	scroll-behavior: smooth;
+}
+
+.otro-blockquote {
+	font-size: 1.4em;
+	font-family: Open Sans;
+	font-style: italic;
+	padding: 0.5em 1.2em;
+	line-height: 1.6;
+	position: relative;
+}
+
+.otro-blockquote::before {
+	font-family: Arial;
+	content: '\201C';
+	color: #2563eb;
+	font-size: 5em;
+	position: absolute;
+	left: 0px;
+	top: -45px;
+}
+
+.otro-blockquote::after {
+	content: '';
+}
+
+.ai-signal {
+	position: relative;
+}
+
+.ai-signal::before {
+	content: '';
+	width: 3px;
+	background-color: #243358;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	left: -1px;
+}
+.ai-signal::after {
+	content: '';
+	width: 3px;
+	background-color: #243358;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	right: -3pxpx;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
